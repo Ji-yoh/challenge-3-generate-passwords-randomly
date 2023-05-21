@@ -12,7 +12,7 @@ var passwordCharacters = {
   uppercase: ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"],
   lowercase:  ['a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z'],
   numbers: [0,1,2,3,4,5,6,7,8,9],
-  special: ['!,#,$,%,&,),(,*,+,,,-,.,/,:,;,<,=,>,?,@,[,\,],^,_,`,},{,|,~,'],
+  special: ["!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"],
 };
 
 // create generatePassword function calling passwordCharacters object array
@@ -22,6 +22,14 @@ var passwordCharacters = {
 function generatePassword() {
   var randomPassword = Math.floor(Math.random() * passwordCharacters.uppercase.length);
   password = passwordCharacters.uppercase[randomPassword];
+
+  // find a way to store user input from prompt
+  prompt("How many characters do you need?"); 
+  // find a way to include different character types based on user response
+  confirm("Click OK to include uppercase letters.");
+  confirm("Click OK to include lowercase letters.");
+  confirm("Click OK to include numbers.");
+  confirm("Click OK to include special characters.");
   
   return password;
 };
