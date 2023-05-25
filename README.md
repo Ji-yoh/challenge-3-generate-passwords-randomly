@@ -53,6 +53,8 @@ Cloned starter code from student repo and created generatePassword function.
 Received assistance from BCS since function was initially only pulling 1 random character. 
 Stored user input for PW length in variable and used IF statements for character type confirmations.
 Added error messages if user requests password exceeding 128 characters or less than 8 characters, and if user does not select at least one character type.
+
+Deployed link: https://ji-yoh.github.io/challenge-3-generate-passwords-randomly/
 ```
 
 ## Screenshots
