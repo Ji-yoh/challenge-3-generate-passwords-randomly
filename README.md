@@ -47,8 +47,18 @@ This project is about creating a password generator. The majority of the HTML ha
 * If the user inputs invalid data (must select at least one character type, length must be between 8 and 128), then repeat the popups until they select correct data.
 * Once the criteria are selected, then use a random number generator to generate the new password and place it in the given space in the HTML. There are a number of ways to do this, the instructional staff can help with hints on this if you need.
 
-## Mock-Up
+## Development
+```
+Cloned starter code from student repo and created generatePassword function. 
+Received assistance from BCS since function was initially only pulling 1 random character. 
+Stored user input for PW length in variable and used IF statements for character type confirmations.
+Added error messages if user requests password exceeding 128 characters or less than 8 characters, and if user does not select at least one character type.
+```
 
-The following image shows the web application's appearance and functionality:
+## Screenshots
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+!["Generator displaying random password."](./assets/generator%20screenshot.png)
+
+!["Password length error message."](./assets/return%20error%20message_2.png)
+
+!["No character selected error message."](./assets/return%20error%20message_1.png)
